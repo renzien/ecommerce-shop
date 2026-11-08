@@ -1,0 +1,33 @@
+{
+  "name": "ayyashop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ayyashop — toko online keluarga dengan checkout WhatsApp",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "setup": "node scripts/setup.mjs",
+    "check": "npm run typecheck && npm run build",
+    "test:smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "mongodb": "7.8.0",
+    "lucide-react": "1.70.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "sharp": "latest"
+  }
+}
